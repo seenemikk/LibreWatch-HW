@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Vibration_Motor
+D DC Motor, alternative symbol
+K DC Motor
+F ~
+$ENDCMP
+#
+#End Doc Library

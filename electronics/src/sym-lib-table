@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "smartwatch")(type "Legacy")(uri "${KIPRJMOD}/../lib/smartwatch.lib")(options "")(descr ""))
+  (lib (name "SmartWatch-rescue")(type "KiCad")(uri "${KIPRJMOD}/SmartWatch-rescue.kicad_sym")(options "")(descr ""))
+)

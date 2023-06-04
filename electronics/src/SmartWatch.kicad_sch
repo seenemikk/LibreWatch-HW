@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6a040108-939a-4ebd-8207-895e1f432dc7)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 102.87 90.17) (size 57.15 52.07) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060c3edff)
+    (property "Sheetname" "MCU" (at 102.87 89.4584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "mcu.kicad_sch" (at 102.87 142.8246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SmartWatch"
+        (path "/6a040108-939a-4ebd-8207-895e1f432dc7" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 39.37 90.17) (size 57.15 52.07) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060c3efbc)
+    (property "Sheetname" "Misc." (at 39.37 89.4584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "misc.kicad_sch" (at 39.37 142.8246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SmartWatch"
+        (path "/6a040108-939a-4ebd-8207-895e1f432dc7" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 39.37 30.48) (size 57.15 52.07) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060c40ec2)
+    (property "Sheetname" "Connectors" (at 39.37 29.7684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "connectors.kicad_sch" (at 39.37 83.1346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SmartWatch"
+        (path "/6a040108-939a-4ebd-8207-895e1f432dc7" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 102.87 30.48) (size 57.15 52.07) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060cb2fe2)
+    (property "Sheetname" "Power" (at 102.87 29.7684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 102.87 83.1346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SmartWatch"
+        (path "/6a040108-939a-4ebd-8207-895e1f432dc7" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "Misc."
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L smartwatch:Vibration_Motor M1
+U 1 1 60C4729C
+P 4950 1700
+F 0 "M1" H 5097 1696 50  0000 L CNN
+F 1 "Vibration motor" H 5097 1605 50  0000 L CNN
+F 2 "smartwatch:Battery_Pads" H 4950 1610 50  0001 C CNN
+F 3 "~" H 4950 1610 50  0001 C CNN
+	1    4950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 60C472A2
+P 4950 1350
+F 0 "R11" H 5009 1396 50  0000 L CNN
+F 1 "36R" H 5009 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 1350 50  0001 C CNN
+F 3 "~" H 4950 1350 50  0001 C CNN
+	1    4950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1450 4950 1500
+$Comp
+L power:VDD #PWR040
+U 1 1 60C472A9
+P 4950 1200
+F 0 "#PWR040" H 4950 1050 50  0001 C CNN
+F 1 "VDD" H 4965 1373 50  0000 C CNN
+F 2 "" H 4950 1200 50  0001 C CNN
+F 3 "" H 4950 1200 50  0001 C CNN
+	1    4950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1200 4950 1250
+$Comp
+L Device:Q_NPN_BEC Q4
+U 1 1 60C472B0
+P 4850 2250
+F 0 "Q4" H 5041 2296 50  0000 L CNN
+F 1 "BC846B" H 5041 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5050 2350 50  0001 C CNN
+F 3 "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIODS20710/DIODS20710-1.pdf?hkey=52A5661711E402568146F3353EA87419" H 4850 2250 50  0001 C CNN
+	1    4850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2000 4950 2050
+$Comp
+L Device:R_Small R10
+U 1 1 60C472B7
+P 4500 2250
+F 0 "R10" V 4600 2200 50  0000 L CNN
+F 1 "220R" V 4700 2200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 2250 50  0001 C CNN
+F 3 "~" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 2250 4600 2250
+Text GLabel 4350 2250 0    50   Input ~ 0
+MOTOR_PWM
+Wire Wire Line
+	4400 2250 4350 2250
+$Comp
+L power:GND #PWR041
+U 1 1 60C472C0
+P 4950 2500
+F 0 "#PWR041" H 4950 2250 50  0001 C CNN
+F 1 "GND" H 4955 2327 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2450 4950 2500
+$Comp
+L Device:D D4
+U 1 1 60C472C7
+P 4350 1750
+F 0 "D4" V 4300 1650 50  0000 R CNN
+F 1 "1N4448WT" V 4400 1650 50  0000 R CNN
+F 2 "smartwatch:SOD-523F" H 4350 1750 50  0001 C CNN
+F 3 "https://www.mouser.ee/datasheet/2/308/1N914BWT_D-2309108.pdf" H 4350 1750 50  0001 C CNN
+	1    4350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 60C472CD
+P 4700 1750
+F 0 "C10" H 4450 1800 50  0000 L CNN
+F 1 "0.1u" H 4450 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 1750 50  0001 C CNN
+F 3 "~" H 4700 1750 50  0001 C CNN
+	1    4700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2000 4700 2000
+Connection ~ 4950 2000
+Wire Wire Line
+	4700 1500 4950 1500
+Connection ~ 4950 1500
+$Comp
+L smartwatch:ICM-42605 U4
+U 1 1 60C472E2
+P 2100 2250
+F 0 "U4" H 2100 3017 50  0000 C CNN
+F 1 "ICM-42605" H 2100 2926 50  0000 C CNN
+F 2 "smartwatch:PQFN50P300X250X97-14N" H 2100 2250 50  0001 L BNN
+F 3 "https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/DS-000292-ICM-42605-v1.5.pdf" H 2100 2250 50  0001 L BNN
+F 4 "TDK Corporation" H 2100 2250 50  0001 L BNN "MANUFACTURER"
+F 5 "IPC 7351B" H 2100 2250 50  0001 L BNN "STANDARD"
+F 6 "0.4" H 2100 2250 50  0001 L BNN "PARTREV"
+	1    2100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 60C472E8
+P 3150 2800
+F 0 "#PWR039" H 3150 2550 50  0001 C CNN
+F 1 "GND" H 3155 2627 50  0000 C CNN
+F 2 "" H 3150 2800 50  0001 C CNN
+F 3 "" H 3150 2800 50  0001 C CNN
+	1    3150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2750 3150 2750
+Wire Wire Line
+	3150 2750 3150 2800
+Wire Wire Line
+	3100 2250 3150 2250
+Wire Wire Line
+	3150 2250 3150 2350
+Connection ~ 3150 2750
+Wire Wire Line
+	3100 2350 3150 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2350 3150 2450
+Wire Wire Line
+	3100 2450 3150 2450
+Connection ~ 3150 2450
+Wire Wire Line
+	3150 2450 3150 2550
+Wire Wire Line
+	3100 2550 3150 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	3150 2550 3150 2650
+Wire Wire Line
+	3100 2650 3150 2650
+Connection ~ 3150 2650
+Wire Wire Line
+	3150 2650 3150 2750
+Text GLabel 3100 2050 2    50   Input ~ 0
+ACC_INT1
+Text GLabel 1100 1850 0    50   Input ~ 0
+ACC_INT2
+$Comp
+L power:GND #PWR035
+U 1 1 60C47301
+P 1050 2500
+F 0 "#PWR035" H 1050 2250 50  0001 C CNN
+F 1 "GND" H 1055 2327 50  0000 C CNN
+F 2 "" H 1050 2500 50  0001 C CNN
+F 3 "" H 1050 2500 50  0001 C CNN
+	1    1050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2450 1050 2450
+Wire Wire Line
+	1050 2450 1050 2500
+$Comp
+L power:VDD #PWR038
+U 1 1 60C47309
+P 3150 1700
+F 0 "#PWR038" H 3150 1550 50  0001 C CNN
+F 1 "VDD" H 3165 1873 50  0000 C CNN
+F 2 "" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1750 3150 1750
+Wire Wire Line
+	3150 1750 3150 1700
+Wire Wire Line
+	3150 1750 3150 1850
+Wire Wire Line
+	3150 1850 3100 1850
+Connection ~ 3150 1750
+$Comp
+L power:VDD #PWR036
+U 1 1 60C47314
+P 1350 900
+F 0 "#PWR036" H 1350 750 50  0001 C CNN
+F 1 "VDD" H 1365 1073 50  0000 C CNN
+F 2 "" H 1350 900 50  0001 C CNN
+F 3 "" H 1350 900 50  0001 C CNN
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 60C4731A
+P 1350 1300
+F 0 "#PWR037" H 1350 1050 50  0001 C CNN
+F 1 "GND" H 1355 1127 50  0000 C CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 60C47320
+P 1350 1100
+F 0 "C7" H 1442 1146 50  0000 L CNN
+F 1 "0.1u" H 1442 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1350 1100 50  0001 C CNN
+F 3 "~" H 1350 1100 50  0001 C CNN
+	1    1350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 60C47326
+P 1700 1100
+F 0 "C8" H 1792 1146 50  0000 L CNN
+F 1 "2.2u" H 1792 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1700 1100 50  0001 C CNN
+F 3 "~" H 1700 1100 50  0001 C CNN
+	1    1700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 60C4732C
+P 2050 1100
+F 0 "C9" H 2142 1146 50  0000 L CNN
+F 1 "10n" H 2142 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2050 1100 50  0001 C CNN
+F 3 "~" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1300 1350 1250
+Wire Wire Line
+	1350 1250 1700 1250
+Wire Wire Line
+	2050 1250 2050 1200
+Wire Wire Line
+	1350 900  1350 950 
+Wire Wire Line
+	1350 950  1700 950 
+Wire Wire Line
+	2050 950  2050 1000
+Wire Wire Line
+	1700 950  1700 1000
+Connection ~ 1700 950 
+Wire Wire Line
+	1700 950  2050 950 
+Wire Wire Line
+	1700 1200 1700 1250
+Connection ~ 1700 1250
+Wire Wire Line
+	1700 1250 2050 1250
+Wire Wire Line
+	1350 1250 1350 1200
+Connection ~ 1350 1250
+Wire Wire Line
+	1350 1000 1350 950 
+Connection ~ 1350 950 
+$Comp
+L power:VDD #PWR034
+U 1 1 60C47342
+P 1050 2100
+F 0 "#PWR034" H 1050 1950 50  0001 C CNN
+F 1 "VDD" H 950 2200 50  0000 C CNN
+F 2 "" H 1050 2100 50  0001 C CNN
+F 3 "" H 1050 2100 50  0001 C CNN
+	1    1050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2100 1050 2150
+Wire Wire Line
+	1050 2150 1100 2150
+Text GLabel 1100 2250 0    50   Input ~ 0
+ACC_SCL
+Text GLabel 1100 2350 0    50   Input ~ 0
+ACC_SDA
+Wire Notes Line
+	3650 3250 3650 500 
+Wire Notes Line
+	5900 3250 5900 500 
+Wire Notes Line
+	500  3250 5900 3250
+Text Notes 3700 650  0    50   ~ 0
+Vibration motor
+Text Notes 550  650  0    50   ~ 0
+Acc/Gyro
+Wire Wire Line
+	4700 1850 4700 2000
+Wire Wire Line
+	4700 1650 4700 1500
+Wire Wire Line
+	4700 1500 4350 1500
+Wire Wire Line
+	4350 1500 4350 1600
+Connection ~ 4700 1500
+Wire Wire Line
+	4700 2000 4350 2000
+Wire Wire Line
+	4350 2000 4350 1900
+Connection ~ 4700 2000
+$EndSCHEMATC
